@@ -9,8 +9,17 @@
   - `rm -rf (name)`
 - `ls` : list
   - `ls -a` : 숨김폴더 포함
-- `git init`
-- `git add`
-- `git commit -m " "`
-- `git push`
-- `git status`
+
+
+
+- git 명령어
+
+  ```
+  $ git add .
+  $ git commit -m "first commit"
+  $ git push -u origin master
+  ```
+
+  - `git init`
+
+  - `git status`
