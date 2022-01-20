@@ -26,9 +26,12 @@ get_middle_char('coding') #=> di
 def get_middle_char(word):
     length = len(word)
     if length % 2:
-        return print(word[length // 2])
+        return word[length // 2]
     else:
-        return print(word[length // 2 - 1 :  length // 2 + 1])
+        return word[length // 2 - 1 :  length // 2 + 1]
+        
+print(get_middle_char('ssafy')) #=>a
+print(get_middle_char('coding')) #=> di
 ```
 
 
@@ -69,7 +72,7 @@ result = my_func(3, 7)
 ```
 
 ```
-10
+None
 ```
 
 
@@ -88,6 +91,8 @@ def my_avg(*numbers):
     for i in numbers:
         total += i
     avg = total / len(numbers)
-    return print(avg)
+    return avg
+    
+print(my_avg(77, 83, 95, 80, 70)) #=> 81.0
 ```
 

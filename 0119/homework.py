@@ -2,12 +2,15 @@
 # def get_middle_char(word):
 #     length = len(word)
 #     if length % 2:
-#         return print(word[length // 2])
+#         return word[length // 2]
 #     else:
-#         return print(word[length // 2 - 1 :  length // 2 + 1])
+#         return word[length // 2 - 1 :  length // 2 + 1]
 
 # get_middle_char('ssafy') #=>a
 # get_middle_char('coding') #=> di
+
+# print(get_middle_char('ssafy')) #=>a
+# print(get_middle_char('coding')) #=> di
 
 
 
@@ -42,7 +45,8 @@
 #     for i in numbers:
 #         total += i
 #     avg = total / len(numbers)
-#     return print(avg)
+#     return avg
 
 
 # my_avg(77, 83, 95, 80, 70) #=> 81.0
+# print(my_avg(77, 83, 95, 80, 70)) #=> 81.0
