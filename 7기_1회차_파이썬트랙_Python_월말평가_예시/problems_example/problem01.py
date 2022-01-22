@@ -2,8 +2,11 @@ import json
 
 
 def max_score(scores):
-    pass
-    # 여기에 코드를 작성합니다.
+    x = scores[0]
+    for i in scores:
+        if i > x:
+            x = i
+    return x
 
 
 # 아래의 코드는 수정하지 않습니다.
