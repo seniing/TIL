@@ -5,6 +5,12 @@ def menu_count(restorant):
     pass
     # 여기에 코드를 작성합니다.
     
+    menus = restorant.get('menus') # menus의 값 가져오기
+    my_count = 0 # 메뉴의 개수를 저장하기 위한 값 생성
+    for i in menus:
+        my_count += 1 # munus에 값이 있다면 my_count에 1씩 더하기
+    return my_count
+
 
 # 아래의 코드는 수정하지 않습니다.
 if __name__ == '__main__':
