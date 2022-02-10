@@ -5,6 +5,13 @@
   ```
   $ pip install faker
   ```
+  
+  ```
+  (1) 패키지 설치
+  (2) 파이썬, Git Bash
+  ```
+  
+  
 
 
 
@@ -13,9 +20,9 @@
 - Faker는 다양한 메서드를 통해 임의의 결과값을 반환해준다. 임의의 영문 이름을 반환하는 아래 코드에서 **라인별 의미**를 주석을 참고하여 작성하시오.
 
   ```
-  from faker import Faker # 1. _______을 하기 위한 코드이다.
-  fake = Faker()          # 2. Faker는 _____, fake는 _____이다.
-  fake.name()             # 3. name()은 fake의 _____이다.
+  from faker import Faker # 1. Faker class를 호출하기 코드이다.
+  fake = Faker()          # 2. Faker는 Class, fake는 Instance이다.
+  fake.name()             # 3. name()은 fake의 method이다.
   ```
 
   
@@ -32,7 +39,7 @@
    # => 'Shelly Wilcox' (랜덤이므로 결과 값이 다를 수 있음)
    ```
 
-2.  Locale 정보를 포함하여 호출 시에는 **해당 언어 설정**을 따른다..
+2.  Locale 정보를 포함하여 호출 시에는 **해당 언어 설정**을 따른다.
 
    ```
    fake_ko = Faker('ko_KR')
@@ -47,7 +54,7 @@
    ```
    class Faker():
    
-   	def __(a)__((b), (c)):
+   	def __(a)init__((b)self, (c)locale = en_US):
    		pass
    ```
 
@@ -78,10 +85,10 @@
   fake = Faker('ko_KR')
   Faker.seed(4321)
   
-  print(fake.name())   # 1
+  print(fake.name())   # 이도윤
   
   fake2 = Faker('ko_KR')
-  print(fake2.name())   # 2
+  print(fake2.name())   # 이지후
   ```
 
 
@@ -90,17 +97,21 @@
 
   ```
   fake = Faker('ko_KR')
-  Faker.seed_instance(4321)
+  fake.seed_instance(4321)
   
-  print(fake.name())   # 1
+  print(fake.name())   # 이도윤
   
   fake2 = Faker('ko_KR')
-  print(fake2.name())   # 2
+  print(fake2.name())   # (값이 바뀐다.)
   ```
 
 
 
 - **seed()와 seed_instance()는 각각 어떠한 용도로 쓰일 수 있는지 작성하시오.**
+
+  
+
+  
 
 
 
